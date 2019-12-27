@@ -526,6 +526,11 @@ main .theme ul li a:hover {
   color: #f83244;
 }
 
+main .theme ul li:hover {
+  color: #f83244;
+  margin-top: -2px;
+}
+
 main .seach {
   width: 100%;
   background: #ffffff;

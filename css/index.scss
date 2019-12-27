@@ -467,7 +467,11 @@ main {
                     &:hover {
                         color: #f83244;
                     }
-                }   
+                } 
+                &:hover {
+                    color: #f83244;
+                    margin-top: -2px;
+                }  
             }
         }
     }

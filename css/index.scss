@@ -1291,6 +1291,9 @@ main {
                     display: block;
                     width: 285px;
                     height: 285px;
+                    &:hover {
+                        opacity: 0.8;
+                    }
                 }
                 div {
                     position: absolute;

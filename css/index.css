@@ -1481,6 +1481,10 @@ main .supplies ul li img {
   height: 285px;
 }
 
+main .supplies ul li img:hover {
+  opacity: 0.8;
+}
+
 main .supplies ul li div {
   position: absolute;
   width: 232px;

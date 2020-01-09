@@ -222,12 +222,12 @@
             </p>
         </nav>
         <div class="banner">
-            <img src="../img/banner2.jpg" alt="" id="banner2">
-            <img src="../img/banner3.jpg" alt="" id="banner3">
-            <img src="../img/banner4.jpg" alt="" id="banner4">
-            <img src="../img/banner5.jpg" alt="" id="banner5">
-            <img src="../img/banner6.jpg" alt="" id="banner6">
-            <img src="../img/banner1.jpg" alt="" id="banner1">
+            <img src="../img/banner2.jpg" alt="" id="banner2" class="imgclass">
+            <img src="../img/banner3.jpg" alt="" id="banner3" class="imgclass">
+            <img src="../img/banner4.jpg" alt="" id="banner4" class="imgclass">
+            <img src="../img/banner5.jpg" alt="" id="banner5" class="imgclass">
+            <img src="../img/banner6.jpg" alt="" id="banner6" class="imgclass">
+            <img src="../img/banner1.jpg" alt="" id="banner1" class="imgclass">
             <div>
                 <a href="#banner1"></a>
                 <a href="#banner2"></a>
@@ -1123,26 +1123,21 @@
         </div>
     </footer>
 
-    <!-- <script>
-        ontouch.onclick = function () {
-            var ipt = document.getElementById("ontouch");
-            var cha = document.getElementById("change");
-            ipt.onfocus = function () {
-                cha.style.opacity = "0";
-                // cha.style.display = "block";
-            }
-            ipt.onblur = function () {
-                cha.style.opacity = "1";
-                // cha.style.display = "none";
-            }
-            // document.getElementById("change").style.opacity="1";
-            // document.getElementById("ontouch").focus(document.getElementById("change").style.opacity="1");
-            // document.getElementById("ontouch").blur(document.getElementById("change").style.opacity="0");
+    <script>
+        var banner = document.getElementsByClassName('banner');
+        var arr = [];
+        for(var i=1;i<=6;i++){
+            arr.push(document.getElementById('banner'+i));
         }
-        // recover.onclick = function () {
-        //     document.getElementById("change").style.opacity="0";
-        // }
-    </script> -->
+
+        lastimg = arr[0].cloneNode(true);
+        arr[6] = lastimg;
+        console.log(arr);
+        index = 0;
+        setInterval(function(){
+
+        },1000);
+    </script>
 </body>
 
 </html>
